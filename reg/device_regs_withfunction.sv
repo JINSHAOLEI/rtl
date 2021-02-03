@@ -33,10 +33,10 @@ always@(posedge clk)begin
 	    reg3 <= 'b0 ;
 	end
 	else begin
-	    reg0 <= dev_reg_nxt(addr,4'b0000,wen,wr_data,reg0);
-	    reg1 <= dev_reg_nxt(addr,4'b0001,wen,wr_data,reg1);
-	    reg2 <= dev_reg_nxt(addr,4'b0010,wen,wr_data,reg2);
-	    reg3 <= dev_reg_nxt(addr,4'b0011,wen,wr_data,reg3);
+	    reg0 <= dev_reg_nxt(addr,4'b0000,wen,wr_data,reg0) ;
+	    reg1 <= dev_reg_nxt(addr,4'b0001,wen,wr_data,reg1) ;
+	    reg2 <= dev_reg_nxt(addr,4'b0010,wen,wr_data,reg2) ;
+	    reg3 <= dev_reg_nxt(addr,4'b0011,wen,wr_data,reg3) ;
 	    rd_data <= rd_data_nxt ;
 	end
 end
