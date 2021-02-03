@@ -18,13 +18,13 @@ end
 initial begin
 	  mem_addr = INIT_ADDR ;
     while(mem_addr <= MAX_ADDR)
-		    begin 
-			    @(posedge clk)
-				//---do the task here
-				//---end of task
-				$display("memory address = %h",mem_addr);
-				mem_addr = mem_addr +ADDR_INCR ;
-			end
+    begin 
+        @(posedge clk)
+	//---do the task here
+	//---end of task
+        $display("memory address = %h",mem_addr);
+	mem_addr = mem_addr +ADDR_INCR ;
+end
 #10 
 $finish;
 end
