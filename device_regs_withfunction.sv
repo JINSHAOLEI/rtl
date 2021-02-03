@@ -1,5 +1,6 @@
-module #(parameter ADDRWIDTH=4,DATAWIDTH=8)
-device_regs_withfunction(
+module device_regs_withfunction
+#(parameter ADDRWIDTH=4,DATAWIDTH=8)	
+(
 input      [ADDRWIDTH-1:0] addr    ,
 input                      wen     ,
 input      [DATAWIDTH-1:0] wr_data ,
