@@ -19,7 +19,7 @@ initial begin
 	  mem_addr = INIT_ADDR ;
     while(mem_addr <= MAX_ADDR)
     begin 
-        @(posedge clk)
+	    @(posedge clk) //repeat(clk_num) @(posedge clock);
 	//---do the task here
 	//---end of task
         $display("memory address = %h",mem_addr);
