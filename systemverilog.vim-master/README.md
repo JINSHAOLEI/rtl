@@ -1,5 +1,12 @@
 systemverilog.vim
 =================
+cd ~
+mkdir .vim
+cd .vim
+cp -rp * .
+
+then restart vim
+
 
 SystemVerilog indent and syntax scripts
 
