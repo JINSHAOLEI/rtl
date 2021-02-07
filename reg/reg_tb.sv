@@ -1,3 +1,4 @@
+module reg_tb;
 parameter REG0_OFFSET =4'b0000,
           REG1_OFFSET =4'b0001,
           REG2_OFFSET =4'b0010,
